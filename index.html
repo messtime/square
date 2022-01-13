@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../square/css/Demo.css" />
+    <title>俄罗斯方块</title>
+  </head>
+
+  <body>
+    <div class="square" id="local">
+      <div class="title"><h2>我方游戏区域</h2></div>
+      <div class="game" id="local_game"></div>
+      <div class="tip" id="local_tip"></div>
+      <div class="next" id="local_next"></div>
+      <div class="info">
+        <div>用时<span id="local_time">&nbsp;&nbsp;0</span></div>
+        <div>得分<span id="local_score" class="score">&nbsp;&nbsp;0</span></div>
+      </div>
+    </div>
+    <div class="square" id="remote">
+      <div class="title"><h2>对方游戏区域</h2></div>
+      <div class="game" id="remote_game"></div>
+      <div class="tip" id="remote_tip"></div>
+      <div class="next" id="remote_next"></div>
+      <div class="info">
+        <div>用时<span id="remote_time">&nbsp;&nbsp;0</span></div>
+        <div>
+          得分<span id="remote_score" class="score">&nbsp;&nbsp;0</span>
+        </div>
+        <div class="btn">
+          <button id="down">down</button>
+          <button id="left">left</button>
+          <button id="right">right</button>
+          <button id="rotate">rotate</button>
+          <button id="fall">fall</button
+          ><!-- 下坠 -->
+          <button id="fixed">fixed</button
+          ><!-- 固定 -->
+          <button id="performNext">performNext</button
+          ><!-- 产生下一个 -->
+          <button id="checkClear">checkClear</button
+          ><!-- 是否消行 -->
+          <button id="gameover">gameover</button
+          ><!-- 游戏是否结束 -->
+          <button id="settime">settime</button>
+          <button id="addscore">addscore</button>
+          <button id="gamestate">gamestate</button
+          ><!-- 游戏状态赢或输 -->
+          <button id="addTaiLines">addTaiLines</button
+          ><!-- 底部增加一行 -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../square/js/square.js"></script>
+  <script src="../square/js/squareFactory.js"></script>
+  <script src="../square/js/game.js"></script>
+  <script src="../square/js/local.js"></script>
+  <script src="../square/js/remote.js"></script>
+  <script type="text/javascript" src="../square/js/Demo.js"></script>
+</html>

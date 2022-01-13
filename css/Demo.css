@@ -1,0 +1,85 @@
+.square {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  border: solid 1px red;
+}
+.title {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+.game {
+  width: 200px;
+  height: 400px;
+  border-bottom: 1px solid blue;
+  border-right: 1px solid blue;
+  border-left: 1px solid blue;
+  position: absolute;
+  background-color: #f2faff;
+  top: 70px;
+  left: 10px;
+}
+.next {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 70px;
+  left: 250px;
+  border: solid 0px red;
+}
+.info {
+  position: absolute;
+  top: 170px;
+  left: 250px;
+  border: solid 0px red;
+}
+
+.none,
+.current,
+.done {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.tip {
+  width: 100px;
+  position: absolute;
+  top: 270px;
+  left: 250px;
+  font-size: 20px;
+  color: red;
+  border: solid 0px red;
+}
+
+.score {
+  color: green;
+}
+/* 消失的方块 */
+.none {
+  background-color: #414141;
+  border: solid 1px white;
+}
+
+/* 正在操作的方块 */
+.current {
+  background-color: pink;
+  border: solid 1px red;
+}
+
+/* 落下的方块 */
+.done {
+  background: #d2f028;
+  border: solid 1px black;
+}
+
+#remote {
+  left: 500px;
+}
+
+.btn {
+  width: 70px;
+  border: solid 0px red;
+}
